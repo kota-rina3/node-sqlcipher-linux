@@ -28,8 +28,7 @@ jobs:
     - name: 安装并编译模块
       continue-on-error: false
       run: |
-        npm install @journeyapps/sqlcipher@5.3.1 --build-from-source
-
+        npm install @journeyapps/sqlcipher@5.3.1
     - name: 上传构建产物
       uses: actions/upload-artifact@v4
       with:
