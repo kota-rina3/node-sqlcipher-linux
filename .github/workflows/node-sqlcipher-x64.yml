@@ -23,7 +23,7 @@ jobs:
         tar -xJf /tmp/node.tar.xz -C /usr/local --strip-components=1
         node -v
         npm -v
-        npm install -g node-gyp@6.1.0
+        npm install -g node-gyp@11
 
     - name: 安装并编译模块
       continue-on-error: false
