@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: node-sqlcipher-x64
-        path: ./
+        path: ./node_modules/@journeyapps/sqlcipher/build
