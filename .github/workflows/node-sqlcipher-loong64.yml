@@ -30,7 +30,10 @@ jobs:
             node -v
             npm -v
             npm install -g node-gyp@12.2.0
-            npm install @journeyapps/sqlcipher --build-from-source            
+            npm install @journeyapps/sqlcipher --build-from-source --ignore-scripts
+            cd node_modules/@journeyapps/sqlcipher
+            node-gyp rebuild
+            cd /workspace
           '
 
     - name: 上传构建产物
